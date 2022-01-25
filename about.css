@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #333333;
+    line-height: 1,6;
+    background-color:#343434;
+    animation: stars 205s linear alternate;
+}
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    padding-top: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header_logo{ 
+    font-size: 50px;
+    font-weight: 700;
+    background-color: #20bf55;
+    background: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-items: center;
+}
+
+.nav{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.nav_link{
+    display: inline-block;
+    vertical-align: top;
+    color: seashell;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.2s linear;
+}
+
+.nav_link:hover{
+
+    color: #61de2a ;
+}
+
+.header_inner{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.info_title{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffff00, 0 0 80px #ffff00, 0 0 90px #ffff00, 0 0 100px #ffff00, 0 0 150px #ffff00;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.info{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: seashell;
+    width: 70%;
+    font-size: 22px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+#earth {
+    background:url(https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/earth-2.jpg);
+    background-size:cover;
+    border:2px solid #000;
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    animation: movimiento 5s linear 0s infinite;
+    box-shadow:0 0 25px RGBA(255,255,255, 0.10),
+               -8px -8px 15px #000 inset,
+               2px 2px 25px #000 inset,
+               -45px -45px 25px RGBA(0,0,0, 0.5) inset, 
+               25px 25px 45px RGBA(0,0,0, 0.45) inset;
+    margin:6em auto;
+    transform:rotateX(6deg) rotateY(6deg) rotateZ(6deg);
+  }
+  
+  @keyframes movimiento {
+    0% { background-position:0 0 }
+    100% { background-position:355px 0 }
+  }
+  
+  @keyframes stars {
+    0% { background-position:0 0 }
+    100% { background-position:0 100% }
+  }
+ 
+
